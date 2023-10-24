@@ -8,6 +8,7 @@ import { ProductDetailsComponent } from './PAGES/product-details/product-details
 import { CartComponent } from './PAGES/cart/cart.component';
 import { AuthenticationComponent } from './PAGES/authentication/authentication.component';
 import { LandingpageComponent } from './PAGES/landingpage/landingpage.component';
+import { NavbarComponent } from './COMPONENTS/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LandingpageComponent } from './PAGES/landingpage/landingpage.component'
     ProductDetailsComponent,
     CartComponent,
     AuthenticationComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
