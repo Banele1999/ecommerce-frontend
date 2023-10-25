@@ -1,25 +1,47 @@
-<nav>
-    <div class="nav-wrapper green lighten-5">
-      <a href="#!" class="brand-logo green-text">Organix</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger green-text"><i class="fa-solid fa-bars"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/products" class="green-text"><i class="fa-solid fa-shop"></i></a></li>
-        <li><a href="/cart" class="green-text"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <li><a href="#" class="green-text"><i class="fa-solid fa-map-marker"></i></a></li>
-        <li><a href="#" class="green-text"><i class="fa-solid fa-user"></i></a></li>
-      </ul>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Organix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Organix</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form> -->
+      </div>
     </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="/products">Shop</a></li>
-    <li><a href="/cart">Cart</a></li>
-    <li><a href="#">Location</a></li>
-    <li><a href="#">Account</a></li>
-  </ul>
-
-<script>
-    $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-</script>
+  </div>
+</nav>
